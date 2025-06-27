@@ -3,7 +3,7 @@ public class Find_minimum_in_rotated_sorted_array {
         
         if(nums[0]>nums[nums.length-1]){
             int ans=pivot(nums);
-            return nums[ans+1];
+            return nums[ans+1%nums.length];  // i dont know y it giving error in the testcase without %nums.length 
         }else{
             
             return nums[0];
